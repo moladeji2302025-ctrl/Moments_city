@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { INITIAL_FRAMES_RENDERED } from "@/lib/constants";
 
 const EMAIL = "HELLO@STUDIOPLACEHOLDER.COM";
 
 function FrameCounter() {
-  const [frame, setFrame] = useState(124567);
+  const [frame, setFrame] = useState(INITIAL_FRAMES_RENDERED);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,6 +39,7 @@ export default function ContactSection() {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     } catch {
+      // Fallback for browsers that don't support the Clipboard API (e.g. older Safari / non-HTTPS contexts)
       const el = document.createElement("textarea");
       el.value = EMAIL;
       document.body.appendChild(el);

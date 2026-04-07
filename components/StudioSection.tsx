@@ -2,12 +2,13 @@
 
 import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { INITIAL_FRAMES_RENDERED } from "@/lib/constants";
 
 export default function StudioSection() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [count, setCount] = useState(0);
-  const countTarget = 124567;
+  const countTarget = INITIAL_FRAMES_RENDERED;
 
   useEffect(() => {
     if (isInView) {
