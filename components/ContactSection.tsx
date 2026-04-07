@@ -225,7 +225,7 @@ export default function ContactSection() {
 
             {/* Copyright */}
             <p className="font-inter text-xs text-[#A0A0A0] tracking-wider">
-              © {new Date().getFullYear()} STUDIO PLACEHOLDER. ALL RIGHTS RESERVED.
+              © {new Date().getFullYear()} Moments city Studios. ALL RIGHTS RESERVED.
             </p>
           </div>
         </motion.footer>

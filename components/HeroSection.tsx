@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const titleText = "STUDIO PLACEHOLDER";
+const titleText = "Moments city Studios";
 
 export default function HeroSection() {
   const [showScroll, setShowScroll] = useState(false);

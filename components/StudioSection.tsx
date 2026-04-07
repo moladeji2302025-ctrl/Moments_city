@@ -76,7 +76,7 @@ export default function StudioSection() {
                 className="font-inter text-[#E0E0E0] leading-relaxed"
                 style={{ fontSize: "1.125rem", lineHeight: 1.7 }}
               >
-                Based at the intersection of art and engineering, STUDIO PLACEHOLDER has spent years
+                Based at the intersection of art and engineering, Moments city Studios has spent years
                 refining a singular aesthetic: dark, deliberate, and undeniably alive. Every frame is
                 a deliberate choice. Every sequence is a statement.
               </p>
