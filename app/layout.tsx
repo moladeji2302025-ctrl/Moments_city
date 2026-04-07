@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "STUDIO PLACEHOLDER — Animation Studio",
+  title: "Moments City Studios",
   description: "3D · 2D · VFX · MOTION — Cinematic animation for the modern world",
 };
 
