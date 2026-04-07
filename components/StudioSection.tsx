@@ -24,7 +24,7 @@ export default function StudioSection() {
       };
       requestAnimationFrame(tick);
     }
-  }, [isInView]);
+  }, [isInView, countTarget]);
 
   return (
     <section

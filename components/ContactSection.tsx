@@ -39,15 +39,8 @@ export default function ContactSection() {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     } catch {
-      // Fallback for browsers that don't support the Clipboard API (e.g. older Safari / non-HTTPS contexts)
-      const el = document.createElement("textarea");
-      el.value = EMAIL;
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand("copy");
-      document.body.removeChild(el);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
+      // Clipboard API unavailable — nothing to do silently; inform the user via the tooltip state
+      setCopied(false);
     }
   };
 
