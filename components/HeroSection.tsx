@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const titleText = "Moments city Studios";
 
@@ -69,6 +70,24 @@ export default function HeroSection() {
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center text-center px-10">
+        {/* Logo above title */}
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
+        >
+          <Image
+            src="/Moments city.svg"
+            alt="Moments City Studios Logo"
+            width={260}
+            height={98}
+            priority
+            className="mx-auto"
+            style={{ filter: "drop-shadow(0 0 12px rgba(107,15,26,0.35))" }}
+          />
+        </motion.div>
+
         {/* H1 with staggered letters */}
         <motion.h1
           className="font-playfair font-bold uppercase tracking-tight leading-none"
