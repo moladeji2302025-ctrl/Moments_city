@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navItems = [
   { label: "HOME", href: "#hero" },
@@ -55,8 +56,16 @@ export default function Navigation() {
         transition={{ duration: 0.6, delay: 0.8 }}
       >
         {/* Logo */}
-        <div className="font-playfair font-bold text-xl tracking-tight text-[#F5F5F5]">
-          SP
+        <div className="flex items-center">
+          <Image
+            src="/Moments city.svg"
+            alt="Moments City Studios"
+            width={110}
+            height={42}
+            priority
+            className="h-10 w-auto"
+            style={{ filter: "drop-shadow(0 0 6px rgba(107,15,26,0.3))" }}
+          />
         </div>
 
         {/* Desktop Nav */}
