@@ -80,8 +80,8 @@ export default function HeroSection() {
           <Image
             src="/Moments city.svg"
             alt="Moments City Studios Logo"
-            width={260}
-            height={98}
+            width={239}
+            height={90}
             priority
             className="mx-auto"
             style={{ filter: "drop-shadow(0 0 12px rgba(107,15,26,0.35))" }}
